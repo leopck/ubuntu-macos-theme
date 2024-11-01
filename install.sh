@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "********************** Note ******************************"
+echo "This script is heavily based on https://www.youtube.com/watch?v=cueqrwlBv6M"
+echo "Besides that some minor modifications as well"
+
 # 1. Update your system
 sudo apt update && sudo apt dist-upgrade -y
 
@@ -7,6 +11,9 @@ sudo apt update && sudo apt dist-upgrade -y
 sudo apt install -y curl rsync git gdebi nautilus-admin nautilus-extension-gnome-terminal sassc gnome-tweaks gnome-shell-extension-manager
 
 # 3. Download necessary files
+
+echo "******** WARNING: The links can expire... but you can still download them from here! https://www.pling.com/p/2159316/"
+
 curl -L -o $HOME/Downloads/cava-config.zip "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1716957132/cava-config.zip?response-content-disposition=attachment%3B%2520cava-config.zip&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241011T104836Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=0f407b40e31b2d02da319246aa32a90c74e0a020491df32b874324c313845754"
 curl -L -o $HOME/Downloads/fonts.zip "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1716957132/fonts.zip?response-content-disposition=attachment%3B%2520fonts.zip&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241011T104931Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=4371391237fc2ac8b46911c2fb16720310132c03bd0ce59eb6cbd91ce76fd31b"
 curl -L -o $HOME/Downloads/gnome-extensions.zip "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1716957132/gnome-extensions.zip?response-content-disposition=attachment%3B%2520gnome-extensions.zip&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241011T105018Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=e62694944126d1035e46e9673ea3f4e251337d9f6412b8dbd7dc381d306694d7"
